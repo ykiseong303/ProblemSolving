@@ -6,7 +6,7 @@ public class Solution1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Scanner sc = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in); 
 		int T = Integer.parseInt(sc.next());
 		for (int i=1;i<T+1;i++) {
 			String s = sc.next();
