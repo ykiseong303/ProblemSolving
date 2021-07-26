@@ -14,7 +14,7 @@ public class SWEA7272 {
 		for(int tc=1;tc<T+1;tc++) {
 			String a = sc.next();
 			String b = sc.next();
-			
+			 
 			if(a.length()!=b.length()) {
 				System.out.printf("#%d DIFF\n",tc);
 				continue;
