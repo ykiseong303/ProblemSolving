@@ -14,7 +14,7 @@
 import heapq
 lst = [[1,2,3],[2,3,4],[-3,4,5]]
 heapq.heapify(lst)
-for _ in range(len(lst)) : 
+for _ in range(len(lst)) :  
     print(heapq.heappop(lst))
 
 
