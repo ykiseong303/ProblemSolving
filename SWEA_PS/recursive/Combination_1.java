@@ -1,6 +1,6 @@
 package recursive_re;
 
-/*
+/* 
  * 3개 중 2개를 뽑는경우
  * 중복을 허용하는 중복조합 
  * 중복은 가능하지만 순서가 다르다고 다른 것으로 취급하지 않음 
@@ -19,7 +19,7 @@ public class Combination_1 {
 			}
 			System.out.println();
 			
-			return;
+			return;  
 		}
 		for(int i=start;i<lst.length;i++) {
 			sel[cnt] = lst[i];
