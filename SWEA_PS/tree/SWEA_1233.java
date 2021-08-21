@@ -40,7 +40,7 @@ public class SWEA_1233 {
 				if(flag==false) {
 					System.out.printf("#%d 0\n",tc);
 					break;
-				}
+				} 
 			}
 			if(flag==true) System.out.printf("#%d 1\n",tc);
 			
