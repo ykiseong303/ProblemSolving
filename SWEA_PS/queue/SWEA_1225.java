@@ -9,7 +9,7 @@ import java.util.Queue;
 import java.util.StringTokenizer;
 
 /*
- * 문제 번호 : SWEA_1225 / 암호생성기 
+ * 문제 번호 : SWEA_1225 / 암호생성기  
  * 목적 : 만들어지는 암호를 출력  
  * 접근 : 큐 
  */
