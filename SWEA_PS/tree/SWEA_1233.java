@@ -28,7 +28,7 @@ public class SWEA_1233 {
 			for(int i=1;i<=N/2;i++) { // 리프노드 직전까지만 값을 입력받음 
 				st = new StringTokenizer(br.readLine());
 				int a = Integer.parseInt(st.nextToken());
-				tree[i] =st.nextToken();
+				tree[i] =st.nextToken(); 
 			}
 			for(int i=N/2+1;i<N+1;i++) { // 리프노드만 값을 입력받음 
 				st = new StringTokenizer(br.readLine());
