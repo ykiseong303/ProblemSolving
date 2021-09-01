@@ -10,7 +10,7 @@ class island {
 	public island(int x, int y) {
 		this.x = x;
 		this.y = y;
-	}
+	} 
 }
 /*
  * 문제번호 : SWEA 1251 / 하나로 
