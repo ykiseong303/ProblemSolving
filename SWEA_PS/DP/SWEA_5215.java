@@ -1,41 +1,50 @@
-package algo_hw_0913_0917;
-
 import java.util.Scanner;
 
-public class SWEA_5215 {
+/*
+ * 문제번호 : SWEA 5125 / 햄버거 다이어트 
+ * 분류 : DP 
+ * 접근 : 1. d[i][w] = i번째 재료까지 고려했을 때, 현재 w에서의 점수의 최대 값 
+ * 		 2. 칼로리의 최대치를 분할해서, i번째 재료까지 고려했을 때, 1부터 L까지의 경우를 저장하고 갱신 
+ * 		 3. i번째 재료의 칼로리가 현재 최대칼로리(Wi)보다 작거나 같을 때, 
+ * 			> i번째 재료를 포함하는경우, 포함하지 않는 경우 중 최대값을 선택 
+ * 			>> i번째 재료를 포함한다면, i번째 재료의 점수 + 현재 최대 칼로리 - i번째 재료의 칼로리 까지의 d값 
+ * 			>> 포함하지 않는다면, i-1번째의 현재 최대 칼로리 값으로 유지 
+ * 			>>> 가능한 이유는, 이미 이전위치에서부터 각각의 위치는 최대값을 나타내는 것이 확실하기 때문에.
+ * 		 
+ */
+public class DP3_KnapsackTest {
 
 	public static void main(String[] args) {
+		
 		Scanner sc = new Scanner(System.in);
-		int T = sc.nextInt();
-		for(int tc=1;tc<=T;tc++) {
-			int N = sc.nextInt();
-	 		int L = sc.nextInt();
+		int N = sc.nextInt();
+		int W = sc.nextInt();
+		
+		int[] weights = new int[N+1];
+		int[] profits = new int[N+1];
+		 
+		
+		for(int i=1;i<N+1;i++) {
+			weights[i] = sc.nextInt();
+			profits[i] = sc.nextInt();
 			
-			// 맛의 점수와, 칼로리를 저장하기 위한 배열 (1번째 인덱스부터 저장)
-			int[] score = new int[N+1];
-			int[] kcal = new int[N+1];
-			 
-			for(int i=1;i<=N;i++) {
-				score[i] = sc.nextInt();
-				kcal[i] = sc.nextInt();
-			}
-			
-			// i번째 재료까지 고려한 1 ~ L까지의 칼로리의 최대 점수를 기록하기 위한 dp테이블 생성 
-			int[][] d = new int[N+1][L+1];
-			for(int i=1;i<=N;i++) {
-				for(int j=1;j<=L;j++) {
-					// i번째까지 고려했을 때,
-					// 허용 칼로리를 1부터 L까지로 나눴을때, 각각의 경우의 최댓값을 저장 
-					
-					if(kcal[i]<=j) { // i번째까지 고려했을 때의 칼로리가 현재 최대 칼로리보다 작거나 같은경우
-						d[i][j] = Math.max(d[i-1][j], score[i]+d[i-1][j-kcal[i]]);
-					} else { // 
-						d[i][j] = d[i-1][j];
-					}
-				}
-			}
-			System.out.printf("#%d %d\n",tc,d[N][L]);
 		}
+		
+		int[][] d = new int[N+1][W+1];
+		for(int i=0;i<=N;i++) {
+			for(int w= 0;w<=W;w++) {
+				// 현재물건의 무게가, 지금 구하려고하는 w무게보다 작거나 같으면 
+				// 가방에 담을 수 있다. 
+				if(weights[i]<=w) { 
+					// 직전 무게까지의 경우, 현재가치 + 직전 물건까지의 최적의 가치 
+					d[i][w] = Math.max(d[i-1][w], profits[i]+d[i-1][w -weights[i]]);
+				} else { // 해당 물건을 가방에 넣을 수 없다.
+					d[i][w] = d[i-1][w]; // 담을 수 없다면 직전 물건까지의 경우가 최대가치 
+				}
+										
+			}
+		}
+		System.out.println(d[N][W]);
 	}
 
 }
