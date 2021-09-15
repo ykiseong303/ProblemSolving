@@ -11,7 +11,7 @@ import java.util.Scanner;
  * 			>> 포함하지 않는다면, i-1번째의 현재 최대 칼로리 값으로 유지 
  * 			>>> 가능한 이유는, 이미 이전위치에서부터 각각의 위치는 최대값을 나타내는 것이 확실하기 때문에.
  * 		 
- */
+ */ 
 public class DP3_KnapsackTest {
 
 	public static void main(String[] args) {
