@@ -11,7 +11,7 @@ public class MST_Prim {
 		// 1. 인접행렬 만들기
 		// - 신장트리에 포함되었는지 확인하는 배열, 타 정점에서 자기 자신으로 올 수 있는 최소비용을 나타내는 배열 생성
 		boolean[] isMst = new boolean[N];
-		int[] minEdge = new int[N];
+		int[] minEdge = new int[N]; 
 		
 		map = new int[N][N];
 		for(int i=0;i<N;i++) {
