@@ -28,7 +28,7 @@ public class MST_Prim {
 		
 		
 		// 3. N개의 정점 모두 신장트리에 포함될 수 있도록 탐색 시작 
-		for(int i=0;i<N;i++) {
+		for(int i=0;i<N;i++) { 
 			
 			// 4. 현재 신장트리에 포함x, 그 중에서 최소비용이 가장 작은 정점을 저장 
 			int min = Integer.MAX_VALUE;
