@@ -29,7 +29,7 @@ class Edge implements Comparable<Edge>{ // 간선의 정보를 담기위한 클�
 	
 }
 
-/*
+/* 
  * 분류 : MST(최소신장트리)를 구하는 크루스칼 알고리즘 
  */
 public class MST_Kruskal {
