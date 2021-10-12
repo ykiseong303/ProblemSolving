@@ -6,7 +6,7 @@ public class MST_Prim {
 	static int[][]map;
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		int N = sc.nextInt();
+		int N = sc.nextInt(); 
 		
 		// 1. 인접행렬 만들기
 		// - 신장트리에 포함되었는지 확인하는 배열, 타 정점에서 자기 자신으로 올 수 있는 최소비용을 나타내는 배열 생성
