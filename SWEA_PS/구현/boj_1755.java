@@ -10,7 +10,7 @@ class Number implements Comparable<Number> {
 	int s2; // 두번째 숫자 우선순위 
 	public Number(int n, int s1, int s2) { // 생성자 
 		this.n = n;
-		this.s1 = s1;
+		this.s1 = s1; 
 		this.s2 = s2;      
 	}
 	@Override
