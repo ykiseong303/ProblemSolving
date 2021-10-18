@@ -12,7 +12,7 @@ import java.util.Scanner;
  * 			> N-1개를 다 돌렸을 때, 마지막으로 기록된 노드에서 회사로 돌아갈 수 없는 경우는 return 
  * 			> 돌아갈 수 있다면, 해당 경로를 sum하고 min갱신 
  *		 5. 가지치기 
- *			> 현재 진행중인 재귀 스택에서 sum이 min보다 커진다면 return 
+ *			> 현재 진행중인 재귀 스택에서 sum이 min보다 커진다면 return   
  */
 public class jo_1681 {
 	static int N;
