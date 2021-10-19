@@ -10,7 +10,7 @@ package recursive_re;
 public class Permutation {
 	static int[] lst = {1,3,5};
 	
-	public static void main(String[] args) { 
+	public static void main(String[] args) {  
 		boolean[] visited = new boolean[3];
 		perm(0, new int[2],visited);
 	}
