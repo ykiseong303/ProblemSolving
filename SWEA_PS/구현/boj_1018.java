@@ -15,7 +15,7 @@ import java.util.StringTokenizer;
  * 		 3. 사방탐색
  * 			> 현재위치랑 다음위치랑 같다면 > 다음위치는 다른 값 > 칠하는 개수 +1
  * 		 4. 시작위치가 W,B두가지로 시작할 수 있으므로 두가지 경우 모두 찾기 
- * 		 5. result 갱신 
+ * 		 5. result 갱신  
  */
 public class boj_1018 {
 	static String[][]shape;
