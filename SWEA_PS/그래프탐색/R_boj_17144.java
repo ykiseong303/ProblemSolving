@@ -59,7 +59,7 @@ public class R_boj_17144 {
 				}
 			}
 			
-		}
+		} 
 
 		while(T>0) {
 			
