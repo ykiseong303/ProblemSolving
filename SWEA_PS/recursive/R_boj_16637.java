@@ -12,7 +12,7 @@ import java.util.Scanner;
  *       3. 음수 * 음수로 최대값이 만들어 질 수 있기 때문에, 항상 최대값을 찾는 dp로는 불가   
  */
 public class R_boj_16637 {
-	static int N,L,res;
+	static int N,L,res; 
 	static String[] str;
 	static int[] num;
 	public static void main(String[] args) {
