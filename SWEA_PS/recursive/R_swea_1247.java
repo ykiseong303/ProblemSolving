@@ -14,7 +14,7 @@ import java.util.StringTokenizer;
 public class R_swea_1247 {
 	static loc com, home,map[];
 	static int N,min;
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) throws IOException { 
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st = new StringTokenizer(br.readLine());
 		
