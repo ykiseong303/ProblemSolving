@@ -1,7 +1,7 @@
 package workshop_0823_0827;
 
 import java.util.Scanner;
-
+ 
 public class MST_Prim {
 	static int[][]map;
 	public static void main(String[] args) {
