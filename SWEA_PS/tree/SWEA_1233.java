@@ -14,7 +14,7 @@ import java.util.StringTokenizer;
  */
 public class SWEA_1233 {
 	static String[] tree;
-	static boolean flag;
+	static boolean flag; 
 	static String[] operator = {"+","-","*","/"};
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
