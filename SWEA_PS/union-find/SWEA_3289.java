@@ -9,7 +9,7 @@ import java.util.Scanner;
  * 접근 : 유니온파인드 메서드를 구현하고, 각 정점들에 대해 이를 수행한다. 
  */
 public class SWEA_3289 {
-	static int N, M;
+	static int N, M; 
 	static int[] parent;
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
